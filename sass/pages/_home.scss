@@ -1,0 +1,250 @@
+.section {
+  position: relative;
+
+  background-color: $color-dark-violet;
+
+  @media only screen and (min-width: $bp-tablet-landscape) {
+    height: 60rem;
+  }
+  &__border {
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      margin-bottom: 5rem;
+      width: 50%;
+      height: 1px;
+      background-color: #fff;
+      display: block;
+    }
+  }
+  &__mobile-image {
+    position: absolute;
+    top: 80rem;
+
+    right: 0;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      display: none;
+    }    
+  }
+  &__bg-right {
+    display: none;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &__bg-left {
+    display: none;
+
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      display: flex;
+      position: absolute;
+      top: 45rem;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      padding: 10rem 30rem 0 10rem;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  &__header {
+    flex-basis: 29%;
+    padding: 5rem 2rem;
+    background-image: url("/images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      flex-basis: 50%;
+      padding: 1rem 2rem;
+      background-image: none;
+    }
+    
+  }
+  &__header-h1 {
+    margin-bottom: 2rem;
+
+    color: #fff;
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+  }
+  &__subtitle {
+    // font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+    color: lightgray;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+  &__image {
+  }
+  &__list {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  &__item {
+    
+    
+  }
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem 2rem;
+    margin-bottom: 30rem;
+    &:hover {
+      background-color: #fff;
+      color: $color-very-dark-violet;
+      transition: all 0.3s;
+      
+    }
+  }
+}
+
+.content {
+  &__header {
+    padding-top: 5rem;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      padding-top: 25rem;
+      text-align: left;
+    }
+    &-h2 {
+
+      font-family: "DM Serif Display", sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $bp-tablet-landscape) {
+        margin-left: 20rem;
+        font-size: 8rem;
+      }
+    }
+  }
+  &__border {
+    height: 1px;
+    width: 20rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+    background-color: $color-dark-violet;
+    
+    display: block;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      margin-bottom: 5rem;
+      margin-left: 20rem;
+      
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 7rem;
+      margin-left: 20rem;
+      text-align: left;
+    }
+  }
+  &__card {
+    &-image {
+      margin-bottom: 2rem;
+    }
+    &-h2 {
+      margin-bottom: 2rem;
+      font-family: "DM Serif Display", sans-serif;
+      font-size: 3rem;
+    }
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: gray;
+
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      max-width: 60%;
+
+      text-align: left;
+    }
+  }
+}
+
+.figure {
+  background-color: $color-dark-violet;
+
+  background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  position: relative;
+  margin: 3rem;
+  margin-bottom: 10rem;
+  @media only screen and (min-width: $bp-tablet-landscape) {
+    margin: 18rem;
+    //padding: 6rem 6rem;
+    background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  }
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &__header {
+  }
+  &__heading {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #fff;
+    //margin-top: 5rem;
+    //margin-bottom: 3rem;
+    padding: 3rem;
+    
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      width: 58%;
+    }
+  }
+  &__link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    letter-spacing: 3px;
+    
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    @media only screen and (min-width: $bp-tablet-landscape) {
+      margin-right: 8rem;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $color-very-dark-violet;
+      transition: all 0.2s;
+    }
+  }
+}
